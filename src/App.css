@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'Adramalech';
+  src: url('./fonts/Adramalech Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Ensure full height is used for the main content area */
+
+
+.main-content {
+  padding-top: 60px; /* Adjust for fixed navbar height */
+}
+
+.chat-container {
+  padding-bottom: 80px; /* Adjust the padding to create space for the navbar */
+}
+
+@media screen and (max-width: 768px) {
+  .med {
+    flex-direction: column;
+  }
+
+  .vect {
+    display: none; /* Hide vector on small screens */
+  }
+}
+
+@media (max-width: 640px) {
+  textarea {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
